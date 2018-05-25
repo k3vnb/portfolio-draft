@@ -1,7 +1,7 @@
 import React from 'react';
 import whiteBGHero from '../assets/images/white_bg_hero.jpg';
 
-function About(){
+function Contact(){
   return(
     <div className="main-container">
       <style jsx>{`
@@ -11,17 +11,20 @@ function About(){
             background-position: right;
             background-repeat: no-repeat;
           }
-          .aboutPageInner {
+          .contact-page-inner {
             width: 100%;
             height: 100%;
           }
           `}</style>
-      <div className="aboutPageInner">
-        <h3>I am lifelong student with a passion for designing and developing websites.</h3>
-        <div>Art, design, javascript, NPM, HTML, CSS, customer service, creative problem solving</div>
+        <div className="contact-page-inner">
+        <div className="contact-line">
+          <div className="contact-line-left">
+
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
-export default About;
+export default Contact;
