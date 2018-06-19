@@ -22,7 +22,7 @@ const ParallaxImage = () => (
         height: 250px;
         width: 100%;
         object-fit: cover;
-        object-position: 0% 6%;
+        object-position: 0% 20%;
       }
       .projects-title {
         color: white;

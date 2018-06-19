@@ -25,45 +25,52 @@ const HeaderParallax = () => (
 
     .header-main-content {
       text-shadow: 1px 1px 1px black;
-      width: 55vw;
-      background-color: #0e000e61;
-      box-shadow: 13px 19px 20px 0px #9cece54a;
+      width: 82vw;
+      background: linear-gradient(217deg,#f3005247,rgba(10, 232, 255, 0.25) 70.71%),linear-gradient(127deg,rgba(50,57,132,0.06),rgba(3,169,244,0.18) 70.71%),linear-gradient(181deg,rgba(125,30,156,0.48),rgba(3,169,244,0.28) 70.71%),linear-gradient(389deg,rgba(148,234,253,0),rgba(0,255,0,0) 70.71%);
+      box-shadow: 6px 6px 13px 0px #000000ad;
       font-family: 'Didact Gothic', sans-serif;
       display: flex;
       flex-direction: column;
       padding: 5%;
-      animation: opacity-change-2 3s, box-shadow-glow 6s;
+      animation: opacity-change-2 1.5s ease-out, box-shadow-glow 1.5s ease-out;
     }
     @keyframes opacity-change-2 {
       from {
-        background-color: #0e000e00;
+        opacity: 0;
       }
       to {
-        background-color: #0e000e61;
+        opacity: 1;
       }
     }
     @keyframes box-shadow-glow {
-      from {
+      0% {
         box-shadow: 0px 1px 1px 0px #0d0e0e4a;
       }
-      to {
-        box-shadow: 13px 19px 20px 0px #9cece54a;
+      50% {
+        box-shadow: 0px 1px 1px 0px #0d0e0e4a;
+      }
+      100% {
+        box-shadow: 6px 6px 13px 0px #000000ad;
       }
     }
     .title-text, .tagline {
-      text-align: center;
-      color: #0e000e;
     }
     .title-text {
       font-family: 'Josefin Sans', sans-serif;
       text-decoration: none;
+      text-align: center;
       color: #fff9f0;
       text-shadow: 3px 3px 5px black;
       letter-spacing: 13px;
+      font-size: 60px;
     }
     .tagline {
-      font-family: 'Didact Gothic', sans-serif;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: 'Work Sans', sans-serif;
       text-shadow: .5px .5px 1px white;
+      font-size: 40px;
     }
     .link-line {
       margin-top: 5%;
@@ -73,8 +80,8 @@ const HeaderParallax = () => (
     }
     .nav-links {
       font-family: 'Josefin Sans', sans-serif;
-      border: 1px solid #ffa90e;
-      color: #ffa90e;
+      border: 1px solid #eaeaea;
+      color: #fdfdfd;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -88,7 +95,7 @@ const HeaderParallax = () => (
     .nav-links:hover {
       box-shadow: 2px 2px 2px black;
       text-shadow: 2px 2px 2px black;
-      border: 1px solid orange;
+      border: 1px solid white;
       cursor: pointer;
       transform: translate(-.5px, -.5px);
     }
@@ -126,7 +133,7 @@ const HeaderParallax = () => (
       <h2 className="tagline">Web Developer & Designer</h2>
       <div className="link-line">
         <div className="nav-links" title="go to about section" onClick={() => scrollToPage('.about-container')}>About</div>
-        <div className="nav-links" title="go to gallery section" onClick={() => scrollToPage('.gallery-container')}>Gallery</div>
+        <div className="nav-links" title="go to gallery section" onClick={() => scrollToPage('.gallery-container')}>Projects</div>
         <div className="nav-links" title="go to contact section" onClick={() => scrollToPage('.contact-container')}>Contact</div>
       </div>
     </div>
