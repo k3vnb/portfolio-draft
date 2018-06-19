@@ -79,7 +79,7 @@ class Header extends React.Component {
               }
             }
             .header-overlay {
-              background: linear-gradient(217deg,rgba(255, 32, 32, 0.44),rgba(255,0,0,0) 70.71%), linear-gradient(145deg,rgba(0, 67, 255, 0),rgba(0,255,0,0) 70.71%), linear-gradient(336deg,rgba(161, 161, 197, 0.78),rgba(0,0,255,0) 70.71%);
+              background: linear-gradient(217deg,rgba(33, 150, 243, 0.33),rgba(255,0,0,0) 70.71%), linear-gradient(145deg,rgba(0, 67, 255, 0),rgba(0,255,0,0) 70.71%), linear-gradient(336deg,rgba(161, 170, 197, 0),rgba(0,0,255,0) 70.71%);
               height: 100%;
               display: flex;
               justify-content: center;

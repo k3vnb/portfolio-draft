@@ -26,9 +26,8 @@ const HeaderParallax = () => (
     .header-main-content {
       text-shadow: 1px 1px 1px black;
       width: 82vw;
-      background: linear-gradient(217deg,#f3005247,rgba(10, 232, 255, 0.25) 70.71%),linear-gradient(127deg,rgba(50,57,132,0.06),rgba(3,169,244,0.18) 70.71%),linear-gradient(181deg,rgba(125,30,156,0.48),rgba(3,169,244,0.28) 70.71%),linear-gradient(389deg,rgba(148,234,253,0),rgba(0,255,0,0) 70.71%);
+      background: linear-gradient(217deg,#fb02ff3d,rgba(10,232,255,0.25) 27.71%),linear-gradient(127deg,rgba(50,57,132,0.06),rgba(3, 169, 244, 0.45) 70.71%),linear-gradient(197deg,rgba(125, 30, 156, 0.37),rgba(3,169,244,0.28) 81.71%),linear-gradient(389deg,rgba(236, 0, 218, 0.6),rgba(0,255,0,0) 41.71%);
       box-shadow: 6px 6px 13px 0px #000000ad;
-      font-family: 'Didact Gothic', sans-serif;
       display: flex;
       flex-direction: column;
       padding: 5%;
