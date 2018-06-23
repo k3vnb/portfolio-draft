@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 
+
 function scrollToPage(pageSelector) {
   const goToPage = document.querySelector(pageSelector);
   const toElement = (element) => {
@@ -26,7 +27,8 @@ const HeaderParallax = () => (
     .header-main-content {
       text-shadow: 1px 1px 1px black;
       width: 82vw;
-      background: linear-gradient(217deg,#fb02ff3d,rgba(10,232,255,0.25) 27.71%),linear-gradient(127deg,rgba(50,57,132,0.06),rgba(3, 169, 244, 0.45) 70.71%),linear-gradient(197deg,rgba(125, 30, 156, 0.37),rgba(3,169,244,0.28) 81.71%),linear-gradient(389deg,rgba(236, 0, 218, 0.6),rgba(0,255,0,0) 41.71%);
+      max-width: 650px;
+      background: linear-gradient(217deg,#ff021936,rgba(0, 0, 0, 0.2) 27.71%),linear-gradient(127deg,rgba(50,57,132,0.06),rgba(3, 169, 244, 0.45) 70.71%),linear-gradient(197deg,rgba(125, 30, 156, 0.37),rgba(0, 0, 0, 0.28) 81.71%),linear-gradient(389deg,rgba(0, 149, 236, 0.43),rgba(0,255,0,0) 41.71%);
       box-shadow: 6px 6px 13px 0px #000000ad;
       display: flex;
       flex-direction: column;
@@ -128,8 +130,10 @@ const HeaderParallax = () => (
 
       `}</style>
     <div className="header-main-content">
-      <h1 className="title-text">Kevin  &nbsp;Boyle</h1>
-      <h2 className="tagline">Web Developer & Designer</h2>
+      <div>
+        <h1 className="title-text">Kevin  &nbsp;Boyle</h1>
+        <h2 className="tagline">Web Developer & Designer</h2>
+      </div>
       <div className="link-line">
         <div className="nav-links" title="go to about section" onClick={() => scrollToPage('.about-container')}>About</div>
         <div className="nav-links" title="go to gallery section" onClick={() => scrollToPage('.gallery-container')}>Projects</div>
